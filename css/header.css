@@ -1,0 +1,13 @@
+.weather {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.weather span {
+  font-size: 20px;
+  padding: 0px 12px;
+}
+.weather i {
+  font-size: 30px;
+}

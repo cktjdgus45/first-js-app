@@ -3,21 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <title>clockJS</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/920f3667b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00</h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="what is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+    <header class="weather">
+      <i class="fas fa-cloud-sun "></i>
+      <span class="js-weather"></span>
+    </header>
+    <main class="viewport">
+      <div class="viewport_mainview">
+        <div class="viewport_clock clock-area">
+          <div class="js-clock">
+            <h1>00:00</h1>
+            <h2>2020년 1월 20일 월요일</h2>
+          </div>
+        </div>
+        <div class="viewport_askName askName">
+          <form class="js-form form">
+            <input type="text" placeholder="이름을 입력하세요" maxlength="30" />
+          </form>
+        </div>
+        <div class="viewport_answerName answerName">
+          <h4 class="js-greetings greetings"></h4>
+        </div>
+        <div class="viewport_todo todo">
+          <div class="todo_ask-todo">
+            <form class="js-toDoForm">
+              <input
+                type="text"
+                placeholder="할 일을 입력하세요"
+                maxlength="50"
+              />
+            </form>
+          </div>
+          <div class="todo_list">
+            <ul class="js-toDoList"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
